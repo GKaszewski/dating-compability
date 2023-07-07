@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .text-outline-2 {
+        text-shadow:
+                -2px -2px 0 #ffff,
+                2px -2px 0 #ffff,
+                -2px 2px 0 #ffff,
+                2px 2px 0 #ffff;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .h-screen {
+        height: -webkit-fill-available;
+    }
+
+    .min-h-screen {
+        min-height: -webkit-fill-available;
+    }
+}
